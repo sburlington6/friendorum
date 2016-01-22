@@ -1,0 +1,297 @@
+body{ 
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Any validation errors */
+.error {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.box table{
+	/*width: 100%;*/
+	margin: 10px auto 10px;
+	border:1px solid #000000;
+}
+
+.box td, .box th{
+	border:1px solid #000000;
+}
+
+#wrapper{
+	position: relative;
+	margin: 60px 0px 10px;
+	min-height: 500px;
+}
+
+#wrapper h3{
+	display: inline;
+}
+
+.box{
+	z-index:1;
+	margin: 10px auto 5px;
+	padding: 10px;
+	position: relative;
+	border-top:2px solid #000000;
+	border-bottom:2px solid #000000;
+}
+
+.edit{ /*edit links on info page*/
+float: right;
+}
+
+/*Start menu***********************************************/
+nav{
+	border-bottom: 1px solid #000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 850px;
+	z-index: 100;
+}
+.topnav {  
+	width: 100%;
+	border-bottom: 1px solid #000000;
+    list-style-type: none;  
+    padding: 0;  
+    margin: auto;  
+    float: left;  
+}  
+.topnav li {  
+	border: 1px solid #000000;
+    float: left;  
+    margin: 5px 5px 5px;  
+    padding: 0;  
+    position: relative;
+} 
+ 
+.topnav li > a{  
+    padding: 7px;   
+    display: block;  
+    text-decoration: none;  
+    float: left;  
+}  
+.topnav li span { /*--Drop down trigger styles--*/  
+    width: 17px;  
+    height: 32px;  
+    float: right;  
+	cursor: pointer;
+	border-left: 1px solid #000;
+    background: url(../../images/buttons/subnav_btn-down.png) no-repeat center top;  
+}  
+.topnav li span.subhover {
+    background: url(../../images/buttons/subnav_btn-up.png) no-repeat center top; 
+	background-position: center bottombottom; cursor: pointer; /*--Hover effect for trigger--*/ 
+} 
+
+.subnav { 
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
+    
+	top: 40px;  
+    margin: 0; 
+	padding: 0;  
+    display: none;  
+    float: left;
+    border: 1px solid #111;  
+	z-index: 100;
+}  
+ 
+.subnav td{
+	text-align: center;
+}
+ 
+.subnav a { 
+	border: 1px solid #000000;
+	padding: 5px;
+    text-decoration: none; 
+	display: block;
+	margin: 0;
+}  
+
+.rigtht{
+	float: right !important;
+}
+
+#smallLogo{
+	margin: 5px auto 0px;
+	float: left;
+}
+/*End Menu******************************************/
+
+
+#logo{
+	z-index:1;
+	margin: 30px auto 20px;
+	padding: 0px;
+	width: 845px;
+	position: relative;
+	border: none;
+	height: 126px;
+}
+#logo img{
+	margin: 0 0 0 0;
+}
+
+.login{
+ margin: 10px auto 10px;
+ text-align: center;
+}
+
+.login a{
+	display: block;
+	margin: auto;
+}
+
+
+.gallery td{
+	border: 3px solid #000000;
+	text-align: center;
+	width: 100px;
+}
+
+/*photo navigation links (first last previous next)*/
+.photoNav{
+	text-align: center;
+	margin: 10px auto 10px;
+	border: 1px solid #000000;
+	width: 200px;
+	padding: 5px;
+}
+
+/* friend requests (<div>)*/
+#notifications{
+	text-align: center;
+	z-index:1;
+	background-color: #7A809B;
+	margin: 10px auto 5px;
+	padding: 5px;
+	width: 245px;
+	border:2px solid #000000;
+}
+
+.clock{
+	z-index:2;
+	position: fixed;
+	bottom: 0px;
+	right: 5px;
+	text-align: center;
+	margin: 10px auto 5px;
+	padding: 5px;
+	width: 100px;
+	border:2px solid #000000;
+}
+
+.clock p{
+	margin: 0px;
+}
+
+.comment{
+	text-align: center;
+}
+
+/* full size image 
+.largeImage {
+	display: block;
+	margin: auto;
+}*/
+
+/*table with photo and nav*/
+#photo{
+	margin: auto;
+	width: auto;
+}
+#photo td{
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #ffffff;
+}
+#photoComments
+{
+	text-align: center;
+	border: 1px solid #ffffff;
+}
+.remove
+{
+	display: inline;
+}
+
+.caption{
+	text-align: center;
+	margin: auto;
+}
+
+/* dark background behind popups */
+.dark{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color:rgba(0,0,0,0.9);
+	z-index: 200;
+}
+
+.uploadForm{
+	position: relative;
+	top: 100px;
+	border:1px solid #ffffff;
+	background-color:#A8A8A8 ;
+	width: 400px;
+	margin: auto;
+}
+.uploadForm p{
+	text-align: center;
+}
+
+/* The persons username on their profile (a <h1> element) */
+#username{
+	display: inline;
+	margin: 10px;
+}
+
+#rss{
+margin: auto;
+text-align: center;
+}
+
+#footer {
+	z-index:1;
+	margin: auto;
+	text-align: center;
+	font-size: 80%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+/* style form inputs (use for errors)
+input[type=text], textarea , input[type=password]{
+    -webkit-transition: all 0.10s ease-in-out;
+	-moz-transition: all 0.10s ease-in-out;
+	-ms-transition: all 0.10s ease-in-out;
+	-o-transition: all 0.10s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus, input[type=password]:focus {
+    box-shadow: 0 0 5px 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+*/
+
+input[type=submit]{
+	cursor: pointer;
+    outline: none;
+    padding: 0px 5px 0px;
+    border: 1px solid #000000;
+	background: none;
+}
+

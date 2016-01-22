@@ -1,0 +1,50 @@
+input[type=submit]{
+	float: right;
+}
+
+#container{
+	background: #444;
+	padding: 10px;
+	position: relative;
+	width: 790px;
+	min-height: 200px;
+	margin: auto;
+}
+
+#tabs{
+	float: left;
+	padding: 0;
+}
+#tabs a{
+	text-decoration: none;
+	margin: 3px 0px 3px;
+	text-align: right;
+	padding: 5px;
+	display: block;
+	border: 1px solid #000;
+}
+
+.selected{
+	background: #999;
+	border-right: none !important;
+}
+
+#info{
+	width: 700px;
+	margin-left: 82px;
+	background: #999;
+	padding: 0px;
+	clear: none !important;
+}
+
+.info{
+	width: 700px;
+	margin: 0px auto 0px !important;
+	clear: none !important;
+	border: none !important;
+}
+
+.labels{
+	text-align: right !important;
+	width: 150px;
+}

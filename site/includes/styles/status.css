@@ -1,0 +1,74 @@
+#statuses{
+width: 650px;
+position: relative;
+margin: auto;
+}
+
+#statuses table, #statuses td{
+border: none;
+padding: 0 !important;
+}
+
+.fullStatus{
+position: relative;
+border: 1px solid #fff;
+padding: 0 !important;
+margin: 0px auto 10px;
+}
+
+.status{
+position: relative;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+.statusT{
+margin: 0 !important;
+padding: 0 !important;
+width: 100%;
+}
+
+.statusT img{
+display:block;
+margin: auto !important;
+padding: 0 !important;
+}
+
+.statusT table{
+width: 100%;
+margin: 0 !important;
+padding: 0 !important;
+vertical-align: top;
+}
+
+.comment{
+margin-left:160px;
+background: rgba(255, 0, 0, 0.2);
+padding: 0px;
+font-size: 80%;
+}
+.comment table,.comment td{
+padding: 0;
+margin: 0px auto 0px;
+text-align: left;
+vertical-align: center;
+}
+.comment table{
+width: 100%;
+}
+
+.button{
+display: inline;
+}
+
+input[type=submit]{
+	cursor: pointer;
+    outline: none;
+    padding: 0px 5px 0px;
+    border: none;
+	background: none;
+	font-size: 75%;
+}
+input[type=submit]:hover{
+text-decoration:underline
+}
