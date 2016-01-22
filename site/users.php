@@ -65,56 +65,6 @@ if ($logged_in)
 					<td>
 						<input class="swap" id="s" type="text" name="search"/>
 					</td>
-				</tr>
-				<tr>
-					<td>Gender:</td>
-				</tr>
-				<tr>
-					<td>
-						<select name="genderEdit">
-							<option value="">Gender</option>
-							<option value="Male">Male</option>
-							<option value="Female">Female</option>
-							<option value="Other">Other</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>Age:</td>
-				</tr>
-				<tr>
-					<td>
-						<select name="ageFrom">
-							<option value=""></option>
-						<?php
-						for ($i=13;$i<=100;$i++)
-						{
-							echo '<option value="'.$i.'">'.$i.'</option>';
-						}
-						?>
-							<option value="100+">100+</option>
-						</select>
-						to
-						<select name="ageTo">
-							<option value=""></option>
-						<?php
-						for ($i=13;$i<=100;$i++)
-						{
-							echo '<option value="'.$i.'">'.$i.'</option>';
-						}
-						?>
-							<option value="100+">100+</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>Location:</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="text" name="location"/>
-					</td>
-				</tr>
 				<tr>
 					<td>
 						<input type="submit" name="searchSubmit"/>
