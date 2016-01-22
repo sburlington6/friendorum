@@ -92,7 +92,7 @@
 			echo "</table>";
 			?>
 			<div id="rss">
-				<a href="http://www.gettingsocial.tk/feed.php"><img src="images/rss.gif" alt="rss" height="34" width="34"/></a>
+				<a href="feed.php"><img src="images/rss.gif" alt="rss" height="34" width="34"/></a>
 			</div>	
 			<?php
 			require("includes/close.php");
