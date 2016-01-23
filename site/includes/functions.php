@@ -446,6 +446,6 @@ function changeNames($string)		//pass a string like user_id get a string like Us
 	return $newWord;
 }	
 
-require_once('functions/time.php');
+require_once('functions/timeFunctions.php');
 
 ?>

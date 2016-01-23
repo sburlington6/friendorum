@@ -1,6 +1,8 @@
 <?php
 
-//---------------------TIME-----------------------------
+/*
+* Time Functions ------------------------------
+*/
 function nicetime($date)
 {
     if(empty($date)) {
