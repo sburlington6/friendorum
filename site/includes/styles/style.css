@@ -28,7 +28,7 @@ body{
 
 #wrapper{
 	position: relative;
-	margin: 40px 0px 10px;
+	margin: 50px 0px 10px;
 	min-height: 500px;
 }
 
@@ -55,7 +55,7 @@ nav{
 	width: 100%;
 	border-bottom: 1px solid #000000;
     list-style-type: none;  
-    padding: 0;  
+    padding: 5px; 
     margin: auto;  
     float: left;  
 }  
@@ -73,6 +73,10 @@ nav{
 #headerLogo a{
 	padding: 0px;
 }
+#headerLogo a:hover{
+	padding: 0px;
+	background: none;
+}
 
 #smallLogo{	/* this is the small logo img*/
 	float: left;
@@ -89,7 +93,6 @@ nav{
     height: 32px;  
     float: right;  
 	cursor: pointer;
-	
     background: url(../../images/buttons/subnav_btn-down.png) no-repeat center top;  
 }  
 .topnav li span.subhover {

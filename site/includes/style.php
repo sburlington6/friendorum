@@ -127,7 +127,7 @@ body{
 	background-color: <?php echo $nav_bar; ?>; 
 }
 .topnav li{
-	background-color: <?php echo $nav_buttons; ?>; 
+	
 	
 	-moz-border-radius: <?php echo $nav_curve; ?>px;
 	-khtml-border-radius: <?php echo $nav_curve; ?>px;
@@ -138,19 +138,18 @@ body{
 }
 .topnav li a:hover{
 	color: <?php echo $nav_text_hover; ?>;
-}
-.subnav{
 	background-color: <?php echo $nav_buttons; ?>; 
 }
 .subnav{
 	background-color: <?php echo $nav_bar; ?>; 
 }
 .subnav a{
+	color: <?php echo $nav_text_hover; ?>;
+	
+}
+.subnav a:hover{
 	color: <?php echo $nav_text; ?>;
 	background-color: <?php echo $nav_buttons; ?>; 
-}
-.subnav a{
-	color: <?php echo $nav_text_hover; ?>;
 }
 
 #logo{
