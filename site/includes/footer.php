@@ -1,20 +1,7 @@
 </div>
 <div class="box" id="footer">
-
-<?php
-if (date("Y") == '2012')
-{
-	echo "&copy; Friendorum 2012";
-}
-else
-{
-	echo "&copy; Friendorum 2012-".date("Y");
-}
-?>
-	
-	<br>
+	<p>Friendorum &copy; 2012-<?php echo date("Y");?></p>
 	<a href="faq.php">FAQ</a>
-	
 	<a href="changelog.php">Changelog</a>
 </div>
 
