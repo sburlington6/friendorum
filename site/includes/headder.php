@@ -2,7 +2,7 @@
 <a name="top"></a>
 <nav>
 	<ul class="topnav">  
-		<li style="border: none; padding: 0px !important; border-radius: 0px; margin: 0; background: none;"><a href="index.php"><img id="smallLogo" src="images/logos/smallLogo.png" width="250" height="30" alt="Logo" /></a></li>
+		<li id="headerLogo"><a href="index.php"><img id="smallLogo" src="images/logos/smallLogo.png" width="250" height="30" alt="Logo" /></a></li>
 		<?php	
 		if (isset($_SESSION['user_name']))
 		{

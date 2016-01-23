@@ -4,10 +4,16 @@ body{
 	margin: 0px;
 }
 
-/* Any validation errors */
-.error {
+
+.error {		/* Any validation errors */
 	color: #FF0000;
 	font-weight: bold;
+}
+.box{
+	z-index:1;
+	margin: 10px auto 5px;
+	padding: 10px;
+	position: relative;
 }
 
 .box table{
@@ -22,7 +28,7 @@ body{
 
 #wrapper{
 	position: relative;
-	margin: 60px 0px 10px;
+	margin: 40px 0px 10px;
 	min-height: 500px;
 }
 
@@ -30,22 +36,12 @@ body{
 	display: inline;
 }
 
-.box{
-	z-index:1;
-	margin: 10px auto 5px;
-	padding: 10px;
-	position: relative;
-	border-top:2px solid #000000;
-	border-bottom:2px solid #000000;
-}
-
 .edit{ /*edit links on info page*/
-float: right;
+	float: right;
 }
 
 /*Start menu***********************************************/
 nav{
-	border-bottom: 1px solid #000000;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -53,7 +49,9 @@ nav{
 	min-width: 850px;
 	z-index: 100;
 }
-.topnav {  
+
+
+.topnav { /*the ul inside the nav*/
 	width: 100%;
 	border-bottom: 1px solid #000000;
     list-style-type: none;  
@@ -62,12 +60,23 @@ nav{
     float: left;  
 }  
 .topnav li {  
-	border: 1px solid #000000;
     float: left;  
-    margin: 5px 5px 5px;  
+    margin: 0px 5px 0px;  
     padding: 0;  
     position: relative;
 } 
+
+#headerLogo{ /* this is the li that contains the a that contains the small logo img*/
+	background: none;
+}
+
+#headerLogo a{
+	padding: 0px;
+}
+
+#smallLogo{	/* this is the small logo img*/
+	float: left;
+}
  
 .topnav li > a{  
     padding: 7px;   
@@ -80,7 +89,7 @@ nav{
     height: 32px;  
     float: right;  
 	cursor: pointer;
-	border-left: 1px solid #000;
+	
     background: url(../../images/buttons/subnav_btn-down.png) no-repeat center top;  
 }  
 .topnav li span.subhover {
@@ -90,22 +99,22 @@ nav{
 
 .subnav { 
     position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
-    
-	top: 40px;  
+	top: 35px;  
+	right: 0;
     margin: 0; 
 	padding: 0;  
     display: none;  
     float: left;
-    border: 1px solid #111;  
+    border: 1px solid #000;
 	z-index: 100;
 }  
  
-.subnav td{
+.subnav table{
+	border-collapse: collapse;
 	text-align: center;
 }
  
 .subnav a { 
-	border: 1px solid #000000;
 	padding: 5px;
     text-decoration: none; 
 	display: block;
@@ -114,11 +123,6 @@ nav{
 
 .rigtht{
 	float: right !important;
-}
-
-#smallLogo{
-	margin: 5px auto 0px;
-	float: left;
 }
 /*End Menu******************************************/
 
@@ -133,12 +137,12 @@ nav{
 	height: 126px;
 }
 #logo img{
-	margin: 0 0 0 0;
+	margin: 0;
 }
 
 .login{
- margin: 10px auto 10px;
- text-align: center;
+	margin: 10px auto 10px;
+	text-align: center;
 }
 
 .login a{
@@ -251,11 +255,6 @@ nav{
 #username{
 	display: inline;
 	margin: 10px;
-}
-
-#rss{
-margin: auto;
-text-align: center;
 }
 
 #footer {

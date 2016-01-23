@@ -6,11 +6,11 @@
 	<head>
 		<title>Changelog</title>
 		<meta charset="utf-8"/>
-		<?php require ('includes/style.php'); ?>
+		<?php require_once('includes/style.php'); ?>
 	</head>
 	
 	<?php 
-	require("includes/headder.php");
+	require_once("includes/headder.php");
 	?>
 		<h1>Changelog</h1>
 		<table>
@@ -34,8 +34,8 @@
 		</table>
 			
 		<?php
-		require("includes/close.php");
-		require("includes/footer.php");
+		require_once("includes/close.php");
+		require_once("includes/footer.php");
 		?>
 	</body>
 </html>

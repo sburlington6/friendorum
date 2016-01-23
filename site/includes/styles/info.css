@@ -1,3 +1,5 @@
+/*Only used on info.php*/
+
 input[type=submit]{
 	float: right;
 }

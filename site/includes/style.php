@@ -99,90 +99,8 @@
 ?>
 <script type='text/javascript' src='includes/js/jquery-1.2.3.min.js'></script>
 <script type='text/javascript' src='includes/js/menu.js'></script>
-
-<script type="text/javascript">
-<!--
-//started in headder.php (starting body tag) code in style.php (below) and used in footer.php (clock paragraph)
-function updateClock ( )
-{
-  var currentTime = new Date ( );
-
-  var currentHours = currentTime.getHours ( );
-  var currentMinutes = currentTime.getMinutes ( );
-  var currentSeconds = currentTime.getSeconds ( );
-
-  // Pad the minutes and seconds with leading zeros, if required
-  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
-  currentHours = ( currentHours < 10 ? "0" : "" ) + currentHours;
-
-  // Choose either "AM" or "PM" as appropriate
-  var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
-
-  // Convert the hours component to 12-hour format if needed
-  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-
-  // Convert an hours component of "0" to "12"
-  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-
-  // Compose the string for display
-  var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-
-  // Update the time display
-  document.getElementById("clock").innerText = currentTimeString;
-}
-
-
-$(document).ready(function(){
-
-	/**
-	* Character Counter for inputs and text areas
-	*/
-	$('.word_count').each(function(){
-		// get current number of characters
-		var length = $(this).val().length;
-		// get current number of words
-		//var length = $(this).val().split(/\b[\s,\.-:;]*/).length;
-		// update characters
-		$(this).parent().find('.counter').html( (200-length) + ' characters left');
-		// bind on key up event
-		$(this).keyup(function(){
-			// get new length of characters
-			var new_length = $(this).val().length;
-			// get new length of words
-			//var new_length = $(this).val().split(/\b[\s,\.-:;]*/).length;
-			// update
-			$(this).parent().find('.counter').html( (200-new_length) + ' characters left');
-		
-		
-		
-		//disable text area when there are too many characters
-		if (new_length >= 200)
-		{
-			//$('#status').attr("disabled", true); 
-			$('.word_count').parent().find('.counter').html('That\'s ' + new_length + ' too many characters');
-		}
-		else
-		{
-			$('#status').removeAttr("disabled"); 
-		}
-		
-		
-		});
-		
-		
-		
-	});
-
-});
-
-
-// -->
-</script>
-
-
-
-
+<script type='text/javascript' src='includes/js/charCount.js'></script>
+<script type='text/javascript' src='includes/js/updateClock.js'></script>
 
 <link rel="stylesheet" href="includes/styles/style.css">
 
@@ -194,8 +112,6 @@ body{
 
 .box{
 	background-color: <?php echo $box_color; ?>;
-	border-top:2px solid #000000;
-	border-bottom:2px solid #000000;
 }
 .box a:link{ 
 	color: <?php echo $link_color; ?>;
