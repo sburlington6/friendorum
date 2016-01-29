@@ -140,6 +140,7 @@ if ($logged_in)
 		while ($row = mysqli_fetch_assoc($result)) 
 			{
 				$userId = getUserId ();
+				//if the user is a firend or the post is from the user
 				if (friends($userId , $row['user_id']) OR $userId = $row['user_id'])
 				{
 				echo '<div class="fullStatus">';
