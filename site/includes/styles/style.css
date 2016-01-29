@@ -29,7 +29,8 @@ body{
 #wrapper{
 	position: relative;
 	margin: 50px 0px 10px;
-	min-height: 500px;
+	min-height: 100%;
+	
 }
 
 #wrapper h3{
@@ -40,94 +41,15 @@ body{
 	float: right;
 }
 
-/*Start menu***********************************************/
-nav{
-	position: fixed;
-	top: 0;
-	left: 0;
+#footer {
 	width: 100%;
-	min-width: 850px;
-	z-index: 100;
-}
-
-
-.topnav { /*the ul inside the nav*/
-	width: 100%;
-	border-bottom: 1px solid #000000;
-    list-style-type: none;  
-    padding: 5px; 
-    margin: auto;  
-    float: left;  
-}  
-.topnav li {  
-    float: left;  
-    margin: 0px 5px 0px;  
-    padding: 0;  
-    position: relative;
-} 
-
-#headerLogo{ /* this is the li that contains the a that contains the small logo img*/
-	background: none;
-}
-
-#headerLogo a{
-	padding: 0px;
-}
-#headerLogo a:hover{
-	padding: 0px;
-	background: none;
-}
-
-#smallLogo{	/* this is the small logo img*/
-	float: left;
-}
- 
-.topnav li > a{  
-    padding: 7px;   
-    display: block;  
-    text-decoration: none;  
-    float: left;  
-}  
-.topnav li span { /*--Drop down trigger styles--*/  
-    width: 17px;  
-    height: 32px;  
-    float: right;  
-	cursor: pointer;
-    background: url(../../images/buttons/subnav_btn-down.png) no-repeat center top;  
-}  
-.topnav li span.subhover {
-    background: url(../../images/buttons/subnav_btn-up.png) no-repeat center top; 
-	background-position: center bottombottom; cursor: pointer; /*--Hover effect for trigger--*/ 
-} 
-
-.subnav { 
-    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
-	top: 35px;  
-	right: 0;
-    margin: 0; 
-	padding: 0;  
-    display: none;  
-    float: left;
-    border: 1px solid #000;
-	z-index: 100;
-}  
- 
-.subnav table{
-	border-collapse: collapse;
-	text-align: center;
-}
- 
-.subnav a { 
-	padding: 5px;
-    text-decoration: none; 
-	display: block;
 	margin: 0;
-}  
-
-.rigtht{
-	float: right !important;
+	padding: 0;
+	z-index:1;
+	text-align: center;
+	font-size: 80%;
+	border: 1px solid #000;
 }
-/*End Menu******************************************/
 
 
 #logo{
@@ -258,15 +180,6 @@ nav{
 #username{
 	display: inline;
 	margin: 10px;
-}
-
-#footer {
-	z-index:1;
-	margin: auto;
-	text-align: center;
-	font-size: 80%;
-	padding-bottom: 5px;
-	padding-top: 5px;
 }
 
 /* style form inputs (use for errors)

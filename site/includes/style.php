@@ -103,6 +103,7 @@
 <script type='text/javascript' src='includes/js/updateClock.js'></script>
 
 <link rel="stylesheet" href="includes/styles/style.css">
+<link rel="stylesheet" href="includes/styles/navMenu.css">
 
 <style>
 body{
