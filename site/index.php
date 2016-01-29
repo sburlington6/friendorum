@@ -5,7 +5,7 @@ $registered = isset($_GET['registered']) ? $_GET['registered'] : "false";
 
 if ($logged_in)
 {
-//start status validation
+	//start status validation
 	$errors = array();
 	$taerrors = false;
 	$text = isset($_POST["text"]) ? $_POST["text"] : "";
@@ -140,7 +140,7 @@ if ($logged_in)
 		while ($row = mysqli_fetch_assoc($result)) 
 			{
 				$userId = getUserId ();
-				if (friends($userId , $row['user_id']))
+				if (friends($userId , $row['user_id']) OR $userId = $row['user_id'])
 				{
 				echo '<div class="fullStatus">';
 				echo"<div class='status'>";
