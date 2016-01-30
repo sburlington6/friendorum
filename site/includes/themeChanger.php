@@ -21,6 +21,25 @@
 	header( "Location: $filename" ) ;
 	}
 	
+	$userId = getUserId ($db);
+	
+	$query = "SELECT * FROM accountSettings WHERE user_id = '$userId'";
+	$result = mysqli_query($db, $query);
+	if ($result)
+	{
+		while ($row = mysqli_fetch_assoc($result)) 
+		{
+			$currentSiteTheme = $row['site_theme_id'];
+			$currentProfileTheme = $row['profile_theme_id'];
+		}
+		echo ("the current site theme is ".$currentSiteTheme);
+	}
+	else
+	{
+		echo mysqli_error($db);
+	}
+	
+	
 	
 ?>
 
@@ -31,18 +50,7 @@
 			<td>
 				<select name="siteTheme">
 				<?php
-					$userId = getUserId ($db);
 					
-					$query = "SELECT * FROM profile WHERE user_id = 'clean($userId)'";
-					$result = mysqli_query($db, $query);
-					if (!$result)
-					{
-						echo mysqli_error($db);
-					}
-					while ($row = mysqli_fetch_assoc($result)) 
-					{
-						$currentSiteTheme = $row['site_theme_id'];
-					}
 					
 					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = 'clean($userId)'";
 					$result = mysqli_query($db, $query);
@@ -72,14 +80,6 @@
 			<td>
 				<select name="profileTheme">
 				<?php
-					$userId = getUserId ($db);
-					
-					$query = "SELECT * FROM profile WHERE user_id = 'clean($userId)'";
-					$result = mysqli_query($db, $query);
-					while ($row = mysqli_fetch_assoc($result)) 
-					{
-						$currentProfileTheme = $row['profile_theme_id'];
-					}
 					
 					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = 'clean($userId)'";
 					$result = mysqli_query($db, $query);

@@ -35,8 +35,6 @@
 		</li>
 		<li class="right" style="float: right;"><a href="index.php?logout=TRUE">Logout</a></li>
 		<li class="right" style="float: right;"><a href="discuss.php">Discussions</a></li>  
-		
-		
 		<?php
 		}
 		else

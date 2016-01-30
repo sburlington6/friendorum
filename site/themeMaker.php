@@ -56,6 +56,7 @@ if ($logged_in)
 		<meta charset="utf-8"/>
 		<title>Theme Maker</title>
 		<link rel="stylesheet" href="includes/styles/style.css" type="text/css">
+		<link rel="stylesheet" href="includes/styles/navMenu.css">
 		<script src="includes/jscolor/jscolor.js" type="text/javascript"></script>
 		<style type="text/css">
 			body{
