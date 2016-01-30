@@ -3,7 +3,9 @@ body{
 	padding: 0px;
 	margin: 0px;
 }
-
+html, body {
+	height: 100%;
+}
 
 .error {		/* Any validation errors */
 	color: #FF0000;
@@ -28,9 +30,10 @@ body{
 
 #wrapper{
 	position: relative;
-	margin: 50px 0px 10px;
+	margin: 50px auto -200px;
 	min-height: 100%;
-	
+	height: auto !important;
+	height: 100%;
 }
 
 #wrapper h3{
@@ -48,6 +51,13 @@ body{
 	z-index:1;
 	text-align: center;
 	font-size: 80%;
+	
+	
+}
+
+#footer, .push{
+	height: 120px;
+	clear: both;
 	border: 1px solid #000;
 }
 
