@@ -262,7 +262,7 @@
 							if ($profile_pic == $row['medium'])
 							{
 								echo '<td><input type="radio" name="profile_pic" id="' . $row['medium'] . '" value="' . $row['image_id'] . '" checked/></td>';
-								echo '<td><label for="' . $row['medium'] . '"><img src="' . $row['medium'] . '" alt="profile pic option ' . $row['medium'] . '"/></label></td>';
+								echo '<td><label for="'.$row['medium'].'"><img src="' . $row['medium'] . '" alt="profile pic option ' . $row['medium'] . '"/></label></td>';
 							}
 							else
 							{	

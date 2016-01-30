@@ -182,7 +182,7 @@ if ($logged_in AND isset($_REQUEST['photoId']) AND $_REQUEST['photoId'] > 0)
 		if (isset($_POST['newComment']) OR !empty($errors))
 		{
 		?>
-		<a href="photo.php?photoId=<?php echo $photoId;?>#comment" alt="">Cancel</a>
+		<a href="photo.php?photoId=<?php echo $photoId;?>#comment">Cancel</a>
 		<form action="<?php echo $filename;?>#comment" method="post">
 			<input type="hidden" name="photoId" value="<?php echo $photoId;?>"/>
 			Comment:<input type="text" name="comment" value="<?php echo $comment; ?>"/>

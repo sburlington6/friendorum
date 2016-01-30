@@ -38,7 +38,7 @@ if ($logged_in)
                 $footer_color = clean(isset($_REQUEST["footer_color"]) ? $_REQUEST["footer_color"] : $row['footer_color']);
         }
 	
-	$userId = getUserId ($db);
+	$userId = getUserId ();
 	
 	if (isset($_POST['submit']))
 	{
@@ -125,7 +125,7 @@ if ($logged_in)
 			<form method="post" action="<?php echo $filename; ?>">
 				Select a theme to edit <select name="themeToEdit">
 				<?php
-					$userId = getUserId ($db);
+					$userId = getUserId ();
 					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = '".clean($userId)."'";
 					$result = mysqli_query($db, $query);
 

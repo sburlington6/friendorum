@@ -29,10 +29,3 @@ function makePass()
 	}
 	return $pass;
 }
-
-
-
-
-
-
-?>

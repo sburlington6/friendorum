@@ -19,7 +19,7 @@ if (!empty($imageError))
 			if ($filename != "profileedit.php")
 			{
 			?>
-				<p><a href="albums.php?userId=<?php echo $userId; ?>" alt="cancel">Cancel</a></p>
+				<p><a href="albums.php?userId=<?php echo $userId; ?>">Cancel</a></p>
 				<p>
 					<label for="existing">Existing Album:</label>
 					<select name="albumId" id="albumId">

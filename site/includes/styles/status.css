@@ -13,7 +13,7 @@ padding: 0 !important;
 position: relative;
 border: 1px solid #fff;
 padding: 0 !important;
-margin: 0px auto 10px;
+margin: 0 auto 10px;
 }
 
 .status{
@@ -44,12 +44,12 @@ vertical-align: top;
 .comment{
 margin-left:160px;
 background: rgba(255, 0, 0, 0.2);
-padding: 0px;
+padding: 0;
 font-size: 80%;
 }
 .comment table,.comment td{
 padding: 0;
-margin: 0px auto 0px;
+margin: 0 auto 0;
 text-align: left;
 vertical-align: center;
 }
@@ -64,7 +64,7 @@ display: inline;
 input[type=submit]{
 	cursor: pointer;
     outline: none;
-    padding: 0px 5px 0px;
+    padding: 0 5px 0;
     border: none;
 	background: none;
 	font-size: 75%;

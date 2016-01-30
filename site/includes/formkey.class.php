@@ -61,5 +61,4 @@ class formKey
             return false;  
         }  
     }  
-}  
-?>  
+}

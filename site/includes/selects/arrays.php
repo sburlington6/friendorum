@@ -48,4 +48,3 @@ $religion = array(
 'Scientology',
 'Other'
 );
-?>

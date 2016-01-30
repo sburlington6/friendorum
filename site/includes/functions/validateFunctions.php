@@ -15,6 +15,3 @@ function validEmail($validate)
 		return FALSE;
 	}
 }
-
-
-?>

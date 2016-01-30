@@ -421,13 +421,13 @@ var jscolor = {
 
 
 		this.exportColor = function(flags) {
-			if(!(flags & leaveValue) && valueElement) {
+			if(!(flags && leaveValue) && valueElement) {
 				var value = this.toString();
 				if(this.caps) { value = value.toUpperCase(); }
 				if(this.hash) { value = '#'+value; }
 				valueElement.value = value;
 			}
-			if(!(flags & leaveStyle) && styleElement) {
+			if(!(flags && leaveStyle) && styleElement) {
 				styleElement.style.backgroundColor =
 					'#'+this.toString();
 				styleElement.style.color =
@@ -436,10 +436,10 @@ var jscolor = {
 					0.072 * this.rgb[2]
 					< 0.5 ? '#FFF' : '#000';
 			}
-			if(!(flags & leavePad) && isPickerOwner()) {
+			if(!(flags && leavePad) && isPickerOwner()) {
 				redrawPad();
 			}
-			if(!(flags & leaveSld) && isPickerOwner()) {
+			if(!(flags && leaveSld) && isPickerOwner()) {
 				redrawSld();
 			}
 		};

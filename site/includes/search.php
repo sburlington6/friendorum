@@ -13,4 +13,3 @@ $letters=array();
 //compare data to words array first then to letters array
 
 //show matched data (most words first then most letters)
-?>

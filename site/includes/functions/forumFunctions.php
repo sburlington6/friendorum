@@ -37,8 +37,10 @@ function getLastPosterId($id)			//pass a thread id get the id of the last person
 		return "There are no posts";
 	}
 }
-
-function getuploaderId($id)  //pass an image id get the id of the person that uploaded that image
+/*
+ * gets the userId of the user that uploaded an image
+ */
+function getuploaderId($id)
 {
 	global $db;
 	$query = "SELECT * FROM `images` WHERE `image_id` = ".clean($id);
@@ -47,6 +49,5 @@ function getuploaderId($id)  //pass an image id get the id of the person that up
 	{
 		return $row['user_id'];
 	}
+	return false;
 }
-
-?>

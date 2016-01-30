@@ -57,11 +57,9 @@ function checkLogin()
 	  
 		return true;
     }
-    else 
-    {
-      return false;
-    }
+
   }
+	return false;
 }
 
 /**
@@ -90,6 +88,9 @@ function checkLogout()
 /**
  * Check the user name and password.
  * return true if the username and password are correct.
+ * @param $username is the username to check
+ * @param $password is the passowrd to check
+ * @return bool true for correct password and username false for false
  */
 function checkCredentials($username, $password)
 {
@@ -136,25 +137,8 @@ function checkCredentials($username, $password)
  */
 function isLoggedIn()
 {
-  if(isset($_SESSION['user_name']) AND isset($_SESSION['user_id']))
-  {
-    return true;
-  }
-  return false;
+	if (isset($_SESSION['user_name']) AND isset($_SESSION['user_id'])) {
+		return true;
+	}
+	return false;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>

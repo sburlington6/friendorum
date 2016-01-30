@@ -195,19 +195,15 @@ function friends($id1 , $id2) //pass two user ids find out if they are friends
 	$query = "SELECT * FROM friends WHERE (user = ".clean($id1)." OR friend = ".clean($id1).") AND (user = ".clean($id2)." OR friend = ".clean($id2).")";
 	$result = mysqli_query($db, $query);
 
-	while ($row = mysqli_fetch_assoc($result)) 
-	{
-		return true;
-	}
 	if (!$result)
 	{
 		return false;
 	}
+	else
+	{
+		//while ($row = mysqli_fetch_assoc($result)) {
+			return true;
+		//}
+	}
+
 }
-
-
-
-
-
-
-?>

@@ -191,6 +191,3 @@
 		header( 'Location: index.php?registered=true' ) ; //redirect to index page
         //echo "<p>You are registered and may now login <a href=\"index.php\">login</a></p>";
       }
-	  
-	  
-    ?>

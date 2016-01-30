@@ -21,7 +21,7 @@
 	header( "Location: $filename" ) ;
 	}
 	
-	$userId = getUserId ($db);
+	$userId = getUserId ();
 	
 	$query = "SELECT * FROM accountSettings WHERE user_id = '$userId'";
 	$result = mysqli_query($db, $query);
@@ -32,7 +32,6 @@
 			$currentSiteTheme = $row['site_theme_id'];
 			$currentProfileTheme = $row['profile_theme_id'];
 		}
-		echo ("the current site theme is ".$currentSiteTheme);
 	}
 	else
 	{

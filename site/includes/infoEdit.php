@@ -167,5 +167,4 @@
 				echo "<br>MYSQL Update Error: ".mysqli_error($db)."<br>";
 			}
 		}
-	} 
-?>
+	}

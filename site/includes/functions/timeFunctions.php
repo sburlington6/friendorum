@@ -182,4 +182,3 @@ function convertTimestamp($timeStamp,$break = 'no')			// converts a timestamp to
 		return $date;
 	}
 }
-?>

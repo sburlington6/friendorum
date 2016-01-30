@@ -19,7 +19,7 @@ nav{
 }  
 .topnav li {  
     float: left;  
-    margin: 0px 5px 0px;  
+    margin: 0 5px 0;
     padding: 0;  
     position: relative;
 } 
@@ -29,10 +29,10 @@ nav{
 }
 
 #headerLogo a{
-	padding: 0px;
+	padding: 0;
 }
 #headerLogo a:hover{
-	padding: 0px;
+	padding: 0;
 	background: none;
 }
 
@@ -54,8 +54,8 @@ nav{
     background: url(../../images/buttons/subnav_btn-down.png) no-repeat center top;  
 }  
 .topnav li span.subhover {
-    background: url(../../images/buttons/subnav_btn-up.png) no-repeat center top; 
-	background-position: center bottombottom; cursor: pointer; /*--Hover effect for trigger--*/ 
+	background: url(../../images/buttons/subnav_btn-up.png) no-repeat center bottom;
+	cursor: pointer; /*--Hover effect for trigger--*/
 } 
 
 .subnav { 

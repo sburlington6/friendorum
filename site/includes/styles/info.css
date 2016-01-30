@@ -19,7 +19,7 @@ input[type=submit]{
 }
 #tabs a{
 	text-decoration: none;
-	margin: 3px 0px 3px;
+	margin: 3px 0 3px;
 	text-align: right;
 	padding: 5px;
 	display: block;
@@ -35,13 +35,13 @@ input[type=submit]{
 	width: 700px;
 	margin-left: 82px;
 	background: #999;
-	padding: 0px;
+	padding: 0;
 	clear: none !important;
 }
 
 .info{
 	width: 700px;
-	margin: 0px auto 0px !important;
+	margin: 0 auto 0 !important;
 	clear: none !important;
 	border: none !important;
 }

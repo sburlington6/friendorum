@@ -9,5 +9,3 @@ require_once('functions/registerFunctions.php');
 require_once('functions/userFunctions.php');
 require_once('functions/forumFunctions.php');
 require_once('functions/timeFunctions.php');
-
-?>

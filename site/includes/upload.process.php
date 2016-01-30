@@ -70,6 +70,10 @@ if (isset($_POST['upload']))
 			$image = imagecreatefrompng($filename);
 			return $image;
 		}
+		else
+		{
+			return false;
+		}
 	}
 
 	function renames($size)
