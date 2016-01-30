@@ -111,7 +111,7 @@
 	</head>
 	
 	  <?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 	  ?>
 		<h1><?php echo $threadName . " - " . $description;?></h1>
 		<p><?php echo $text;?></p>

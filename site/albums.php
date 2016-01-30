@@ -53,7 +53,7 @@ require("includes/upload.process.php");
 	</head>
 	
 		<?php
-			require("includes/headder.php");
+			require("includes/header.php");
 			
 			if ($taimages)
 			{

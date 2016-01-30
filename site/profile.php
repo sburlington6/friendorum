@@ -99,7 +99,7 @@ if (!isset($_REQUEST["userId"]))
 	</head>
 	
 		<?php 
-			require("includes/headder.php");
+			require("includes/header.php");
 		  
 			$profile_pic = getProfilePic($userId,"medium");
 			

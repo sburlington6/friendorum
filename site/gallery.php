@@ -74,7 +74,7 @@ $colCtr = 0; 												#controlling the number of colums
 	</head>
 	
 		<?php
-			require("includes/headder.php");
+			require("includes/header.php");
 			echo '<a href="albums.php?userId=' . $userId . '">Back to Albums</a>';
 			if (isset($imagesMedium) AND count($imagesMedium) > 0)
 			{

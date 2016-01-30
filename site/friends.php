@@ -103,7 +103,7 @@ else
 	</head>
 	
 		<?php
-			require("includes/headder.php");
+			require("includes/header.php");
 	
 	//$userId = $_REQUEST['userId'];
 		

@@ -11,7 +11,7 @@
 		<?php require ('includes/style.php'); ?>
 	</head>
 		<?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 		?>
 		<p id="clock" style="font-size: 1300%; text-align: center; padding: 0; margin: 0;">&nbsp;</p>
 		<?php

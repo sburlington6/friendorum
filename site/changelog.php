@@ -10,7 +10,7 @@
 	</head>
 	
 	<?php 
-	require_once("includes/headder.php");
+	require_once("includes/header.php");
 	?>
 		<h1>Changelog</h1>
 		<table>

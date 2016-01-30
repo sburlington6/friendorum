@@ -99,7 +99,7 @@ if ($logged_in)
   </head>
   
 	  <?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 	  ?>
 	<div class="login">
 		Welcome <h3><?PHP echo getName(); ?></h3>
@@ -243,7 +243,7 @@ else
 	  </head>
 	  
 	  <?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 	  
 	if ($registered == "true")
 	{

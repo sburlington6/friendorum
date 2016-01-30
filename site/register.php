@@ -17,7 +17,7 @@
 			</head>
 			
 				<?php 
-					require("includes/headder.php");
+					require("includes/header.php");
 				?>
 				<h1>Register</h1>
 				<p>You are already logged in. You have no need to register</p>
@@ -46,7 +46,7 @@
 		  </head>
 		  
 			  <?php 
-				require("includes/headder.php");
+				require("includes/header.php");
 			  
 				echo "<h1>Register</h1>";
 			  

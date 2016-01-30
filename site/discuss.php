@@ -113,7 +113,7 @@ if ($logged_in)
   </head>
   
 	  <?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 	  ?>
 	<div id="login">
 		Welcome <h3><?PHP echo getUserName(); ?></h3>!

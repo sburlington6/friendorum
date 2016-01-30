@@ -118,7 +118,7 @@ if ($logged_in)
 		
 	</head>
 		<?php
-			require("includes/headder.php");
+			require("includes/header.php");
 		?>
 			
 			

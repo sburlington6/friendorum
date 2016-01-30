@@ -47,7 +47,7 @@ if (isset($_GET['searchSubmit']))
 	</head>
 	
 	  <?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 	  ?>
 		<h1>FAQ</h1>
 			<table>

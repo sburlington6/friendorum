@@ -22,7 +22,7 @@ if ($logged_in AND isset($_REQUEST['photoId']) AND $_REQUEST['photoId'] > 0)
 	</head>
 	
 		<?php 
-		require("includes/headder.php");
+		require("includes/header.php");
 		
 		
 		$query = "SELECT * FROM `images` WHERE `image_id` = ".clean($photoId)." AND `user_id` IS NOT NULL ";
