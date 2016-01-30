@@ -3,7 +3,7 @@
 	{
 		if ($filename == 'profile.php' OR $filename == 'albums.php' OR $filename == 'friends.php' OR $filename == 'info.php')
 		{
-			$query = "SELECT * FROM profile WHERE user_id = ".clean($userId);
+			$query = "SELECT * FROM accountSettings WHERE user_id = ".clean($userId);
 			$result = mysqli_query($db, $query);
 			while ($row = mysqli_fetch_assoc($result)) 
 			{
@@ -18,7 +18,7 @@
 			{
 				$user = $row['user_id'];
 			}
-			$query = "SELECT * FROM profile WHERE user_id = ".clean($user);
+			$query = "SELECT * FROM accountSettings WHERE user_id = ".clean($user);
 			$result = mysqli_query($db, $query);
 			while ($row = mysqli_fetch_assoc($result)) 
 			{
@@ -33,7 +33,7 @@
 			{
 				$user = $row['user_id'];
 			}
-			$query = "SELECT * FROM profile WHERE user_id = ".clean($user);
+			$query = "SELECT * FROM accountSettings WHERE user_id = ".clean($user);
 			$result = mysqli_query($db, $query);
 			while ($row = mysqli_fetch_assoc($result)) 
 			{
@@ -43,7 +43,7 @@
 		elseif ($filename == 'accountSettings.php' OR $filename == 'profileedit.php')
 		{
 			$id = getUserId();
-			$query = "SELECT * FROM profile WHERE user_id = ".clean($id);
+			$query = "SELECT * FROM accountSettings WHERE user_id = ".clean($id);
 			$result = mysqli_query($db, $query);
 			if (!$result)
 			{
@@ -53,11 +53,12 @@
 			{
 				$theme = $row['profile_theme_id'];
 			}
+			echo $theme;
 		}
 		else
 		{
 			$id = getUserId();
-			$query = "SELECT * FROM profile WHERE user_id = ".clean($id);
+			$query = "SELECT * FROM accountSettings WHERE user_id = ".clean($id);
 			$result = mysqli_query($db, $query);
 			if (!$result)
 			{
@@ -74,7 +75,7 @@
 		$theme = '1';
 	}
 	
-	$query = "SELECT * FROM themes WHERE theme_id = ".clean($theme);
+	$query = "SELECT * FROM themes WHERE theme_id = '".$theme."'";
 	$result = mysqli_query($db, $query);
 
 	while ($row = mysqli_fetch_assoc($result)) 

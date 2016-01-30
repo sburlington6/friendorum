@@ -2,20 +2,19 @@
 
 	if (isset($_POST["themesSubmit"]))
 	{
-		$profileTheme = isset($_POST["profileTheme"]) ? $_POST["profileTheme"] : "";
-		$query = "UPDATE profile SET `profile_theme_id` = \"clean($profileTheme)\" WHERE `profile`.`user_id` = 'clean($userId)'";
-		$result = mysqli_query($db, $query);
-		if (!$result)
-		{
-			echo mysqli_error($db);
+		if(isset($_POST["profileTheme"])) {
+			$query = "UPDATE accountSettings SET `profile_theme_id` = '" . $_POST["profileTheme"] . "' WHERE `accountSettings`.`user_id` = '".$userId."'";
+			$result = mysqli_query($db, $query);
+			if (!$result) {
+				echo mysqli_error($db);
+			}
 		}
-	
-		$siteTheme = isset($_POST["siteTheme"]) ? $_POST["siteTheme"] : "";
-		$query = "UPDATE profile SET `site_theme_id` = \"clean($siteTheme)\" WHERE `profile`.`user_id` = 'clean($userId)'";
-		$result = mysqli_query($db, $query);
-		if (!$result)
-		{
-			echo mysqli_error($db);
+		if(isset($_POST["siteTheme"])) {
+			$query = 'UPDATE accountSettings SET `site_theme_id` = "'. $_POST["siteTheme"].'" WHERE `accountSettings`.`user_id` = "'.$userId.'"';
+			$result = mysqli_query($db, $query);
+			if (!$result) {
+				echo mysqli_error($db);
+			}
 		}
 		
 	header( "Location: $filename" ) ;
@@ -51,7 +50,7 @@
 				<?php
 					
 					
-					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = 'clean($userId)'";
+					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = '$userId'";
 					$result = mysqli_query($db, $query);
 					if (!$result)
 					{
@@ -80,7 +79,7 @@
 				<select name="profileTheme">
 				<?php
 					
-					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = 'clean($userId)'";
+					$query = "SELECT * FROM themes WHERE user_id IS NULL OR user_id = '$userId'";
 					$result = mysqli_query($db, $query);
 					while ($row = mysqli_fetch_assoc($result)) 
 					{
